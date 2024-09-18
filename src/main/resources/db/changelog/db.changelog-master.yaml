@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      id: masterChangelog
+      author: sKovalinsky
+      file: db/changelog/users.xml
