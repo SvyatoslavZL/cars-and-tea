@@ -97,15 +97,6 @@
     box-shadow: 0 0 0 0 #FFF !important;
 }
 
-.accordion-button:not(.collapsed)::after, .accordion-button.collapsed::after {
-    content: "\f358";
-    font-family: "Font Awesome 6 Free";
-    color: white;
-    font-weight: 400;
-    background-image: none;
-}
-
-
 /*HEADER*/
 .header-nav {
     background-color: var(--dark-nav);

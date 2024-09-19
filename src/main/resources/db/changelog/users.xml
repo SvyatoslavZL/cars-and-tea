@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
 
-    <changeSet id="users" author="skovalinsky">
+    <changeSet id="users" author="SvyatoslavZL">
         <createTable tableName="users">
             <column autoIncrement="true" name="id" type="BIGINT">
                 <constraints nullable="false"
@@ -14,7 +14,9 @@
             </column>
             <column name="login" type="VARCHAR(128)"/>
             <column name="password" type="VARCHAR(256)"/>
-
+            <column name="role" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 </databaseChangeLog>

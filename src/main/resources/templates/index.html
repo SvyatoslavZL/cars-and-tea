@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<th:block th:replace="~{layout/main :: page(title='Cars & Tea: enthusiast car catalog', appMain=~{::appMain})}">
+<th:block th:replace="~{fragments/main :: page(title='Cars & Tea: enthusiast car catalog', appMain=~{::appMain})}">
     <appMain>
-        <div th:insert="~{layout/lang :: lang-menu}"></div>
+        <div th:insert="~{fragments/lang :: lang-menu}"></div>
         <h1>Cars and Tea Home page</h1>
         <div th:if="${authUser} != null">
-            <form action="/ui/logout" method="post">
+            <form action="logout" method="post">
                 <button class="btn btn-primary btn-lg mt-3" type="submit">Logout</button>
             </form>
         </div>
