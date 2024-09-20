@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<th:block th:replace="~{fragments/main::page(title='Register',appMain=~{::appMain})}">
+<th:block th:replace="~{fragments/main::page(title='Registration page',appMain=~{::appMain})}">
     <appMain>
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-8 col-xl-5">
@@ -13,13 +13,13 @@
                                 <input th:placeholder="#{auth.first_name}" required
                                        th:class="form-control"
                                        type="text"/>
-                                <span class="help-block">min 4 symbols</span>
+                                <span class="help-block">min 3 symbols</span>
                             </div>
                             <div class="form-outline mb-4">
                                 <input th:placeholder="#{auth.last_name}"
                                        th:class="form-control"
                                        type="text"/>
-                                <span class="help-block">min 4 symbols</span>
+                                <span class="help-block">min 3 symbols</span>
                             </div>
                             <div class="form-outline mb-4">
                                 <input th:placeholder="#{auth.email}" required
